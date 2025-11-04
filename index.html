@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 9</title>
+    <title>Visit Bamfield | Home</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="hero dark-background">
-        <div class="content-width">
-          <h1>Welcome to your new wireframe kit</h1>
-          <p>
-            If you're looking for the latest in wireless headphones, look no
-            further. These are perfect for TV, stereo, home, and cell phone.
-          </p>
-          <a class="button" href="#">Start Now!</a>
-          <a href="#">Watch more</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.jpg" class="logo" alt="Bamfield Tourism Logo" width="180" />
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
         </div>
-      </section>
-      <section class="benefits"></section>
-      <section class="testimonials"></section>
-      <section class="call-to-action"></section>
+        <nav>
+            <ul id="nav-items">
+                <li><a href=" #">Discover Local Area</a></li>
+                <li><a href="#">Things to Do</a></li>
+                <li><a href="#">Places to Stay</a></li>
+                <li><a href="#">Plan Your Trip</a></li>
+                <li><a href="#">Getting Here</a></li>
+                <li><a href="#">History & Culture</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Explore wild beaches, stunning hikes and surprising history. Nullam quis risus eget urna mollis
+                ornare
+                vel eu leo. Sed posuere consectetur est at lobortis.</h1>
+            <a href="#">Discover Bamfield</a>
+        </section>
+        <section class="things-to-do">
+            <div class="intro">
+                <h2>Things to Do</h2>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis.
+                    Sed
+                    diam
+                    eget risus varius blandit magna. Vestibulum id ligula porta felis semper. Nullam quis risus eget
+                    urna
+                    mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Sed diam eget risus varius
+                    blandit
+                    magna.
+                </p>
+                <a href=" #">Things to do in Bamfield</a>
+                <img src="images/image.jpg" alt="Bamfield Activities" width="300" />
+            </div>
+            <h3>Featured Listings</h3>
+            <div class="container-cards">
+                <article>
+                    <img src="images/image.jpg" alt="Fishing business" />
+                    <div>
+                        <h4>Fishing Business Name 0</h4>
+                        <p>Category: Fishing Charters</p>
+                        <p>1-250-000-0000</p>
+                        <p>Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum
+                            faucibus.
+                        </p>
+                        <a href="#">View Listing</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/image.jpg" alt="Tour business" />
+                    <div>
+                        <h4>Tour Business Name 0</h4>
+                        <p>Category: Tours</p>
+                        <p>1-250-000-0000</p>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <a href="#">View Listing</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/image.jpg" alt="Restaurant business" />
+                    <div>
+                        <h4>Restaurant Business Name 0</h4>
+                        <p>Category: Restaurants, Pubs & Shops</p>
+                        <p>1-250-000-0000</p>
+                        <p>Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.</p>
+                        <a href="#">View Listing</a>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="button">View All Listings</a>
+        </section>
+        <section class="weddings">
+            <h2>Your West-Coast Wedding Destination</h2>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Sed
+                diam
+                eget risus varius blandit magna. Vestibulum id ligula porta felis semper. Nullam quis risus eget
+                urna
+                mollis.
+            </p>
+            <ul>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+                <li><img src="images/image.jpg" alt="To be defined" /></li>
+            </ul>
+            <a href="#" class="button">Plan your wedding</a>
+        </section>
     </main>
-    <footer></footer>
-  </body>
+
+    <footer>
+        <div class="container">
+            <section class="contact">
+                <h2>Connect with us and other visitors</h2>
+                <address>
+                    <a href="mailto:info@visitbamfield.ca"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        info@visitbamfield.ca</a>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> #VisitBamfield</a>
+                </address>
+            </section>
+            <h2>About Us</h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullam corper nulla
+                non
+                metus auctor fringilla. Sed po suere consectetur est at lobortis. Vivamus sagit tis lacus vel augue
+                laoreet
+                rutrum faucibus dolor. Aenean lacinia bibendum nulla sed consectetur. </p>
+            <nav>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><i class="fa fa-caret-right"></i> <a href="#">Fishing Charters, Tours and Restaurants</a></li>
+                    <li><i class="fa fa-caret-right"></i> <a href="#">Accommodation</a></li>
+                    <li><i class="fa fa-caret-right"></i> <a href="#">How to Get Here</a></li>
+                    <li><i class="fa fa-caret-right"></i> <a href="#">Local Amenities</a></li>
+                    <li><i class="fa fa-caret-right"></i> <a href="#">Weddings</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Bamfield Tourism | Terms & Conditions</p>
+        </div>
+    </footer>
+    <script>
+        function showNav() {
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
+</body>
+
 </html>

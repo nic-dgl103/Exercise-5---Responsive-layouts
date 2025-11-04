@@ -1,137 +1,214 @@
-/*-------- GLOBAL STYLES ---------*/
-* {
-  box-sizing: border-box;
-}
+/*-------- GENERAL STYLES ---------*/
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.4rem;
-  margin: 0;
-  font-family: "Ubuntu", serif;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #a1aeb7;
-  line-height: 1.5;
+  margin: 0;
+  color: #4A4A4A
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*-------- TYPOGRAPHY ---------*/
 
 h1 {
-  font-size: 3.8rem;
-  color: #505d68;
-  line-height: 1.3;
-  font-weight: 700;
-  margin-top: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
 }
 
 a {
-  color: #424b5a;
-  display: block;
-  margin: 16px 0;
-  padding: 12px 48px;
+  font-weight: 600;
+  color: black;
 }
 
 a.button {
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #424b5a;
-  border-radius: 4px;
-  display: inline-block;
   text-decoration: none;
-  font-size: 1.2rem;
-  margin: 26px 0;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  display: inline-block;
+  margin-top: 16px;
+  text-align: center;
 }
 
-/*-------- UTILITY ---------*/
-/* these CSS properties have been sepearated into individual style rules so that you can apply them to multiple blocks of content */
-
-.content-width {
-  width: 334px;
-  margin: auto;
-}
-
-.dark-background {
-  background-color: #f2f5f7;
-}
+/*-------- COLOURS ---------*/
+/* light grey: #F3F3F3;
+pale grey: #D8D8D8
+medium grey: #9B9B9B;
+dark grey: #4A4A4A;
+black: #000000; */
 
 /*-------- HEADER ---------*/
+header {
+  background-color: #4A4A4A;
+  color: #ffffff;
+  padding: 16px;
+}
 
-/*-------- FOOTER ---------*/
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 180px;
+}
+
+header .toggle {
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0;
+  flex-direction: column;
+  display: none;
+}
+
+header ul.show-items {
+  display: flex;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: initial;
+  padding: 8px 0;
+  display: inline-block;
+}
 
 /*-------- HERO ---------*/
 
-section.hero {
-  background-image: url("images/background.png");
-  background-position: bottom right;
-  background-size: 85%;
-  background-repeat: no-repeat;
+.hero {
+  background-image: url(images/image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*-------- THINGS TO DO ---------*/
+
+.things-to-do {
+  padding: 64px 16px;
+}
+
+.things-to-do .intro {
+  padding-bottom: 64px;
+}
+
+.things-to-do .intro img {
+  display: none;
+}
+
+.things-to-do article {
+  border: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.things-to-do article div {
+  padding: 16px;
+}
+
+.things-to-do article h4 {
+  margin: 6px 0;
+}
+
+/*-------- WEDDINGS ---------*/
+
+.weddings {
+  background-color: #000000;
+  color: white;
   text-align: center;
-  height: 100vh;
-  padding: 56px 0;
+  padding: 64px 16px;
 }
 
-/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
-
-  h1 {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  .content-width {
-    width: 690px;
-  }
-
-  /* MEDIUM HERO */
-
-  section.hero {
-    background-size: auto 50%;
-    padding: 104px 0;
-  }
-
-  section.hero p {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
+.weddings ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
-@media only screen and (min-width: 1200px) {
-  h1 {
-    font-size: 6.6rem;
-    font-weight: 400;
-    padding-left: 0;
-    padding-right: 0;
-    width: 50%;
-  }
+.weddings .button {
+  background-color: white;
+  color: black;
+}
 
-  a {
-    display: inline-block;
-  }
+.weddings img {
+  margin-bottom: 16px;
+}
 
-  .content-width {
-    width: 1130px;
-  }
+/*-------- FOOTER ---------*/
 
-  /* LARGE HERO */
+footer .container {
+  margin: 16px;
+}
 
-  section.hero {
-    background-size: auto 75%;
-    text-align: initial;
-    height: initial;
-  }
+footer .contact {
+  background-color: #D8D8D8;
+  padding: 16px;
+}
 
-  section.hero p {
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 50%;
-  }
+footer .contact address a {
+  font-style: normal;
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 1.6rem;
+  display: block;
+  padding: 8px;
+}
+
+footer h2 {
+  font-size: 2rem;
+  margin-top: 24px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer nav a {
+  text-decoration: none;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+footer .copyright {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.4rem;
 }
