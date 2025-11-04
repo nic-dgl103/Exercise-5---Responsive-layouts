@@ -16,11 +16,6 @@ body {
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
-}
-
 /*-------- TYPOGRAPHY ---------*/
 
 h1 {
@@ -76,10 +71,6 @@ header .container {
   align-items: center;
 }
 
-header .logo {
-  width: 180px;
-}
-
 header .toggle {
   cursor: pointer;
   color: white;
@@ -125,17 +116,26 @@ header nav a {
   padding: 64px 16px;
 }
 
-.things-to-do .intro {
+.things-to-do .container-intro {
   padding-bottom: 64px;
 }
 
-.things-to-do .intro img {
+.things-to-do .container-intro img {
   display: none;
+}
+
+.things-to-do .container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .things-to-do article {
   border: 2px solid black;
-  margin-bottom: 16px;
+}
+
+.things-to-do article img {
+  width: 100%;
 }
 
 .things-to-do article div {
@@ -167,6 +167,7 @@ header nav a {
 
 .weddings img {
   margin-bottom: 16px;
+  width: 100%;
 }
 
 /*-------- FOOTER ---------*/
@@ -175,12 +176,12 @@ footer .container {
   margin: 16px;
 }
 
-footer .contact {
+footer .container-contact {
   background-color: #D8D8D8;
   padding: 16px;
 }
 
-footer .contact address a {
+footer .container-contact address a {
   font-style: normal;
   text-decoration: none;
   color: #4A4A4A;
