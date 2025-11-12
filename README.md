@@ -1,4 +1,4 @@
-# Exercise 9: Responsive Layouts
+# Exercise 5: Responsive Layouts
 
 ## Objectives
 
